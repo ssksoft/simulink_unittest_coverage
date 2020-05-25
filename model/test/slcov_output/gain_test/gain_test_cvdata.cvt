@@ -1,0 +1,134 @@
+CV_Database {
+  modelcov {
+    id			    1
+    name		    "gain_test"
+    refModelcovIds	    [2]
+    topModelcovId	    [1]
+  }
+  modelcov {
+    id			    2
+    name		    "gain"
+    topModelcovId	    [1]
+    rootTree		    [0 3 0 0]
+    blockTypes		    [6]
+  }
+  root {
+    id			    3
+    modelcov		    2
+    topSlsf		    7
+    firstTest		    4
+    treeNode		    [2 0 0 0]
+    checksum		    [4023925124 455225259 4171276890 3519234257]
+    metricChecksum	    [1448631840 0 2963809917 32765]
+    dataSize		    [0 0 0 0 2 0 0]
+    runningTotal	    4
+  }
+  testdata {
+    id			    4
+    modelcov		    2
+    tag			    "Run 1"
+    uniqueId		    "615a50d4-84e0-4c9f-aa52-8ef12d1f7510"
+    linkNode		    [3 0 0]
+    type		    DLGENABLED_TST
+    settings		    [1 1 0 0 0 0 0]
+    modelVersion	    "1.1"
+    creator		    "sasat"
+    lastModifiedDate	    "Sun May 24 17:48:31 2020"
+    blockReductionStatus    "ã≠êßìIÇ…ÉIÉt"
+    defaultParameterBehavior "Tunable"
+    dbVersion		    "(R2019b)"
+    conditionallyExecuteInputs 1
+    startTime		    737935.7504386574
+    stopTime		    737935.7504565046
+    simStopTime		    10
+    testobjectives	    [0 0 0 0 0 0 0 0 0 0 0 0 0 5]
+    mcdcMode		    1
+    mldref_enable	    "off"
+    covExternalEMLEnable    1
+    forceBlockReductionOff  1
+    covBoundaryRelTol	    0.01
+    covBoundaryAbsTol	    1e-05
+    covSFcnEnable	    1
+  }
+  metricdata {
+    id			    5
+    metricenumValue	    14
+    metricName		    "cvmetric_Structural_block"
+    size		    7
+    data {
+      rawdata		      "100 M7x1[1 0 1 0 1 0 51]"
+    }
+  }
+  typename {
+    id			    6
+    type		    "Gain"
+  }
+  slsfobj {
+    id			    7
+    name		    "gain"
+    origin		    SIMULINK_OBJ
+    modelcov		    2
+    treeNode		    [0 8 0 0]
+    metricFlags		    16400
+    metrics		    [9 10]
+    hiddenSubSysHandle	    109.0001220703125
+    cvChecksum {
+      u1		      4023925124
+      u2		      455225259
+      u3		      4171276890
+      u4		      3519234257
+    }
+  }
+  slsfobj {
+    id			    8
+    name		    "Gain"
+    origin		    SIMULINK_OBJ
+    slBlckType		    6
+    modelcov		    2
+    treeNode		    [7 0 0 0]
+    metricFlags		    16400
+    metrics		    [11 12]
+    cvChecksum {
+      u1		      2821385004
+      u2		      2587635606
+      u3		      2395622308
+      u4		      1899999217
+    }
+  }
+  metric {
+    id			    9
+  }
+  metric {
+    id			    10
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 -1]
+    dataCnt		    [1 0 -1 -1]
+    dataWidth		    8
+  }
+  sigranger {
+    id			    11
+    slsfobj		    8
+    cov			    [0 1 1]
+  }
+  metric {
+    id			    12
+    baseObjs		    [13]
+    dataIdx		    [4 2]
+    justifiedDataIdx	    [5 3]
+    dataCnt		    [1 1 -1 -1]
+    dataWidth		    6
+  }
+  decision {
+    id			    13
+    modelcov		    2
+    slsfobj		    8
+    relopChkExprIdx	    -1
+    descriptor		    14
+    dc			    [1 0 6 0]
+  }
+  message {
+    id			    14
+    keyNum		    24
+    txtParams		    "executed"
+  }
+}
