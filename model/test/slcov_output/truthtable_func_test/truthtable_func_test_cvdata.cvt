@@ -1,0 +1,323 @@
+CV_Database {
+  modelcov {
+    id			    1
+    name		    "truthtable_func_test"
+    refModelcovIds	    [2]
+    topModelcovId	    [1]
+  }
+  modelcov {
+    id			    2
+    name		    "truthtable_func"
+    topModelcovId	    [1]
+    rootTree		    [0 3 0 0]
+  }
+  root {
+    id			    3
+    modelcov		    2
+    topSlsf		    6
+    firstTest		    4
+    treeNode		    [2 0 0 0]
+    checksum		    [2426405374 2857864801 3283214368 134276106]
+    metricChecksum	    [71249496 0 1389696 0]
+    dataSize		    [15 0 0 0 2 0 0]
+    runningTotal	    4
+  }
+  testdata {
+    id			    4
+    modelcov		    2
+    tag			    "Run 1"
+    uniqueId		    "d9dd5f55-75e1-4454-9c42-9abdabc044d7"
+    linkNode		    [3 0 0]
+    type		    DLGENABLED_TST
+    settings		    [1 1 0 0 0 0 0]
+    modelVersion	    "1.6"
+    creator		    "sasat"
+    lastModifiedDate	    "Sun May 31 16:15:31 2020"
+    blockReductionStatus    "‹­§“I‚ÉƒIƒt"
+    defaultParameterBehavior "Tunable"
+    dbVersion		    "(R2019b)"
+    conditionallyExecuteInputs 1
+    startTime		    737942.684386794
+    stopTime		    737942.684392662
+    simStopTime		    10
+    data {
+      decision		      "100 M15x1[3 0 3 0 3 0 3 0 3 0 101 101 0 0 101]"
+    }
+    testobjectives	    [0 0 0 0 0 0 0 0 0 0 0 0 0 5]
+    mcdcMode		    1
+    mldref_enable	    "filtered"
+    covExternalEMLEnable    1
+    forceBlockReductionOff  1
+    covBoundaryRelTol	    0.01
+    covBoundaryAbsTol	    1e-05
+    covSFcnEnable	    1
+  }
+  metricdata {
+    id			    5
+    metricenumValue	    14
+    metricName		    "cvmetric_Structural_block"
+  }
+  slsfobj {
+    id			    6
+    name		    "truthtable_func"
+    origin		    SIMULINK_OBJ
+    modelcov		    2
+    treeNode		    [0 7 0 0]
+    metricFlags		    81
+    metrics		    [14 15 16]
+    hiddenSubSysHandle	    102.0003662109375
+    cvChecksum {
+      u1		      2426405374
+      u2		      2857864801
+      u3		      3283214368
+      u4		      134276106
+    }
+  }
+  slsfobj {
+    id			    7
+    name		    "Truth Table"
+    origin		    SIMULINK_OBJ
+    refClass		    -99
+    isAtomicSubsytem	    1
+    modelcov		    2
+    treeNode		    [6 8 0 0]
+    metricFlags		    81
+    metrics		    [17 18 19]
+    cvChecksum {
+      u1		      2053805708
+      u2		      3448415612
+      u3		      3922770508
+      u4		      3137289699
+    }
+  }
+  slsfobj {
+    id			    8
+    name		    " SFunction "
+    origin		    SIMULINK_OBJ
+    modelcov		    2
+    treeNode		    [7 0 0 9]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+  }
+  slsfobj {
+    id			    9
+    name		    " Demux "
+    origin		    SIMULINK_OBJ
+    modelcov		    2
+    treeNode		    [7 0 8 10]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+  }
+  slsfobj {
+    id			    10
+    name		    " Terminator "
+    origin		    SIMULINK_OBJ
+    modelcov		    2
+    treeNode		    [7 0 9 11]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+  }
+  slsfobj {
+    id			    11
+    name		    "Truth Table"
+    origPath		    "truthtable_func:15"
+    origin		    STATEFLOW_OBJ
+    refClass		    1
+    modelcov		    2
+    treeNode		    [7 12 10 0]
+    metricFlags		    65
+    metrics		    [20 21]
+    cvChecksum {
+      u1		      2605490180
+      u2		      1019663947
+      u3		      3330203046
+      u4		      3413557325
+    }
+  }
+  slsfobj {
+    id			    12
+    name		    "Truth Table"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    2
+    treeNode		    [11 0 0 13]
+    metricFlags		    65
+    metrics		    [22 23]
+    code		    37
+    cvChecksum {
+      u1		      2829477567
+      u2		      3726664897
+      u3		      3817001098
+      u4		      492707831
+    }
+  }
+  slsfobj {
+    id			    13
+    name		    "{tt_blk_kernel();}"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    2
+    treeNode		    [11 0 12 0]
+    cvChecksum {
+      u1		      1768726420
+      u2		      2663719104
+      u3		      2976391690
+      u4		      2928307662
+    }
+  }
+  metric {
+    id			    14
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 -1]
+    dataCnt		    [5 0 -1 -1]
+    dataWidth		    16
+  }
+  metric {
+    id			    15
+  }
+  metric {
+    id			    16
+    dataIdx		    [1 1]
+    dataCnt		    [4 1 0 0]
+  }
+  metric {
+    id			    17
+    dataIdx		    [2 -1]
+    justifiedDataIdx	    [3 -1]
+    dataCnt		    [5 0 -1 -1]
+    dataWidth		    14
+  }
+  sigranger {
+    id			    18
+    slsfobj		    7
+    cov			    [0 1 1]
+  }
+  metric {
+    id			    19
+    dataIdx		    [1 1]
+    dataCnt		    [3 1 0 0]
+  }
+  metric {
+    id			    20
+    dataIdx		    [4 -1]
+    justifiedDataIdx	    [5 -1]
+    dataCnt		    [5 0 -1 -1]
+    dataWidth		    12
+  }
+  metric {
+    id			    21
+    dataCnt		    [2 0 0 0]
+  }
+  metric {
+    id			    22
+    baseObjs		    [24 25 26 27]
+    dataIdx		    [8 6]
+    justifiedDataIdx	    [9 7]
+    dataCnt		    [5 5 -1 -1]
+    dataWidth		    10
+  }
+  metric {
+    id			    23
+    dataIdx		    [1 1]
+    dataCnt		    [2 2 0 0]
+  }
+  decision {
+    id			    24
+    modelcov		    2
+    slsfobj		    12
+    descriptor		    28
+    outMsgs		    [29]
+    dc			    [1 0 10 0]
+  }
+  decision {
+    id			    25
+    modelcov		    2
+    slsfobj		    12
+    descriptor		    30
+    outMsgs		    [31]
+    dc			    [1 0 11 0]
+  }
+  decision {
+    id			    26
+    modelcov		    2
+    slsfobj		    12
+    descriptor		    32
+    outMsgs		    [33]
+    dc			    [1 0 12 0]
+  }
+  decision {
+    id			    27
+    modelcov		    2
+    slsfobj		    12
+    descriptor		    34
+    outMsgs		    [35 36]
+    dc			    [2 0 13 0]
+  }
+  message {
+    id			    28
+    keyNum		    164
+    intParams		    [0 19]
+  }
+  message {
+    id			    29
+    keyNum		    154
+    intParams		    [21 237]
+  }
+  message {
+    id			    30
+    keyNum		    164
+    intParams		    [237 270]
+  }
+  message {
+    id			    31
+    keyNum		    154
+    intParams		    [272 346]
+  }
+  message {
+    id			    32
+    keyNum		    164
+    intParams		    [346 379]
+  }
+  message {
+    id			    33
+    keyNum		    154
+    intParams		    [381 452]
+  }
+  message {
+    id			    34
+    keyNum		    164
+    intParams		    [126 156]
+  }
+  message {
+    id			    35
+    keyNum		    159
+    intParams		    [187 235]
+  }
+  message {
+    id			    36
+    keyNum		    158
+    intParams		    [157 186]
+  }
+  codeblock {
+    id			    37
+    slsfobj		    12
+    code		    "function y = fcn(u)\n\naVarTruthTableCondition_1 = false;\n\n\n% Example condition 1\n\naVarTruthTableC"
+    "ondition_1 = logical(u > 0);\n\nif (aVarTruthTableCondition_1)\n    aFcnTruthTableAction_1();\nelse % Default\n   "
+    " aFcnTruthTableAction_2();\nend\n\nfunction aFcnTruthTableAction_1()\n\n% Example action 1 called from D1 & D2 col"
+    "umn in condition table\n\ny = u;\n\nfunction aFcnTruthTableAction_2()\n\n% Example action 2 called from D3 column "
+    "in condition table\n\ny = -1*u;\n"
+    totalNumOfObjs	    [4 0 0 0]
+  }
+}
