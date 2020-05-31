@@ -18,20 +18,22 @@ coverage_overall_df = pd.read_csv('setting/coverage_overall_template.csv')
 print(coverage_overall_df)
 
 
-coverage_overall_df.loc[0, 'モデル名'] = 'test'
 print(coverage_overall_df)
 
-# fetched_dataframes = pd.io.html.read_html(urls[0], header=0, index_col=0)
-# i = 0
+fetched_dataframes = pd.io.html.read_html(urls[0], header=0, index_col=0)
+i = 0
 # for fetched_dataframe in fetched_dataframes:
 #     print('table{}'.format(i))
 #     print(fetched_dataframe)
 #     print('##########################')
 #     i = i+1
 
-# print(fetched_dataframes[11].loc['実行', 'カバレッジ'])
+print(fetched_dataframes[11].loc['実行', 'カバレッジ'])
+coverage_overall_df.loc[0, 'モデル名'] = 'gain'
+coverage_overall_df.loc[0, '実行'] \
+    = fetched_dataframes[11].loc['実行', 'カバレッジ']
 
-# coverage_overall_df[0, '実行カバレッジ'] = \
-#     fetched_dataframes[11].loc['実行', 'カバレッジ']
+coverage_overall_df.to_csv('coverage_overall.csv',
+                           encoding="utf-8_sig", index=None)
 
 # print(coverage_overall_df)
