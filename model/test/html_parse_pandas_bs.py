@@ -28,10 +28,23 @@ i = 0
 #     print('##########################')
 #     i = i+1
 
-print(fetched_dataframes[11].loc['実行', 'カバレッジ'])
+# print(fetched_dataframes[11].loc['実行', 'カバレッジ'])
 coverage_overall_df.loc[0, 'モデル名'] = 'gain'
 coverage_overall_df.loc[0, '実行'] \
     = fetched_dataframes[11].loc['実行', 'カバレッジ']
+try:
+    coverage_overall_df.loc[0, '判定'] \
+        = fetched_dataframes[11].loc['判定', 'カバレッジ']
+except:
+    coverage_overall_df.loc[0, '判定'] \
+        = '-'
+
+try:
+    coverage_overall_df.loc[0, '条件'] \
+        = fetched_dataframes[11].loc['条件', 'カバレッジ']
+except:
+    coverage_overall_df.loc[0, '条件'] \
+        = '-'
 
 coverage_overall_df.to_csv('coverage_overall.csv',
                            encoding="utf-8_sig", index=None)
